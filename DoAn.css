@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    /* height: 400vh; */
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.header{
+    background-color: rgb(246, 249, 248);
+}
+.header marquee{
+    text-transform: capitalize;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: steelblue;
+}
+/* ---------------THANH DIEU HUONG------------- */
+.navigation{
+    background-color: rgb(12, 90, 90);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.navigation .logo{
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color:rgb(168, 201, 59);
+
+}
+.navigation .logo span{
+    color:rgb(220, 126, 158);
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+
+} 
+.navigation ul li{
+    position: relative;
+    padding: 0.8rem;
+
+}
+.navigation ul li a{ 
+    font-weight: 600;
+    text-decoration: none;
+    color: #b1bb2e;
+}
+
+.navigation .sign-in a{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.navigation ul li a:hover{
+    color:black;
+}
+/* noi dung dropdown : link1 link2 link3 link4 */
+.noidung-dropdown{
+    display: none;
+    background-color: rgb(214, 192, 168);
+}
+.noidung-dropdown ul{
+    display: block;
+}
+
+.navigation ul li:hover .noidung-dropdown{
+    display: block;
+    position: absolute;
+    top:100%;
+    color: black;
+    opacity: 0.7;
+}
+.noidung-dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+/* -------------SAN PHAM----------------- */
+.main{
+    background-color:aliceblue;
+    width: 100%;
+}
+.sign-in ul li:hover .noidung-dropdown{
+    position: absolute;
+    right: 0;
+}
+
+.main .image img{
+    max-width: 100%;
+}
+.best-seller{
+    margin:50px 0 30px 0;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.main .main-phu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px 15px;
+    gap: 0.8rem; 
+}
+
+.main-phu a{
+    text-decoration: none;
+}
+.main-phu span{
+    text-decoration: underline;
+}
+.main .content1{
+}
+
+.main .content2{
+
+}
+.main .content3{
+
+}
+.anhsp img{
+    max-width: 100%;
+}
+
+.aboutsp{
+    padding: 20px;
+}
+.tensp p{
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.giasp{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+}
+.giagiam a{
+    color: red;
+}
+.giagoc a{
+    color: darkgray;
+    text-decoration: line-through;
+}
+
+/* -------------FOOTER-------------------- */
+
+.footer{
+    background-color: black;
+    margin-top: 20px;
+}
+.cover-footer{
+    padding: 20px;
+    /* display: grid;
+    grid-template-columns: 1fr 1.5fr; */
+    /* height: 300px; */
+}
+.left-right{
+    display: flex;
+    gap: 4rem;
+}
+.Tieude{
+    font-size: larger;
+    color: aliceblue;
+}
+.left-footer{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+.left-footer a{
+    text-decoration: none;
+    color: darkcyan;
+    word-spacing: 2px;
+}
+.left-footer li{
+    padding: 7px 20px;
+    list-style: none;
+}
+
+.right-footer{
+    background-color: rgb(5, 5, 5);
+    padding: 20px 50px;
+}
+.right-footer li{
+    padding: 10px;
+    list-style: none;
+}
+
+i{
+    color: darkcyan;
+}
+.right-footer span{
+    text-decoration: none;
+    color: rgb(240, 241, 241);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+
+.end-footer{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    padding: 10px;
+}
+.end-footer li{
+    padding: 10px 30px;
+    word-spacing: 10px;
+    font-size: larger;
+}
+
+input{
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width:900px){
+    body{
+        font-size: 14px;
+    }
+    .navigation{
+        height: 35px;
+    }
+    .navigation ul li{
+        padding: 0.8rem;
+    }
+    .navigation .logo{
+        font-size: 20px;
+    }
+    input{
+        border-radius: 40px;
+        border: none;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    body{
+        font-size: 12px;
+    }
+    .navigation{
+        height: 30px;
+    }
+    .navigation .logo{
+        font-size: 15px;
+    }
+    .navigation .icon{
+        margin-left:20px ;
+    }
+    .navigation ul li{
+        padding: 0.5rem;
+    }
+    .navigation .sign-in li i{
+        padding: 20px 0px;
+        right: 0;
+    }
+    .best-seller{
+        font-size: 20px;
+    }
+    .main .main-phu{
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px 15px;
+        gap: 0.8rem; 
+    }
+    .left-right{
+        gap: 1.5rem;
+    }
+    .left-footer{
+        margin: 10px;
+        padding:0px ; 
+    }
+    .right-footer{
+        margin: 5px 0;
+        padding: 0;
+    }
+    .left-footer li{
+        padding: 5px;
+    }
+    .end-footer li{
+        padding:10px;
+        word-spacing: 10px;
+        font-size: larger;
+    }
+    input{
+        border-radius: 40px;
+        border: none;
+        font-size: 12px;
+    }
+
+}
+
+
+
